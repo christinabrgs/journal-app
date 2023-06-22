@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="entries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/47aae21c46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1>Entries</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      <a href="/profile" class="btn btn-default btn-sm">Home</a>
+      <a href="/bookmarked" class="btn btn-default btn-sm">Bookmarked</a>
+    </div>
+
+    <div class="row">
+      <% for (let i=0; i < entries.length; i++) {%>
+        <ul><li><p><span class="date"><%= entries[i].date %> </span><span><%= entries[i].entry %></span> <i class="fa-solid fa-circle-minus"></i><i data-entryid="<%= entries[i]._id %>" class="fa-regular fa-star"></i></p></li></ul>
+      <% } %>   
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+body{
+  padding-top:30px;
+  word-wrap:break-word;
+  background: rgb(33, 33, 33);
+  font-family: 'Space Mono', monospace;
+}
+
+img{
+  height: 200px;
+}
+
+.title {
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  margin: 10px 0 0 0;
+}
+
+/* .date {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+
+
+form {
+  margin-bottom: 30px;
+} */
+
+
+
+
+
+
+
+/* body styles */
+
+.container {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  background: #ffffff;
+  padding-top: 10px;
+}
+
+.page-header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #444;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav ul li a:hover {
+  background-color: #eee;
+  text-decoration: none;  
+  color: black;
+}
+
+/* entry form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+form h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+form input[type="date"],
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: none;
+  word-wrap:break-word;
+  border-bottom: 2px solid #ccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin: 25px auto;
+  padding: 10px 50px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* entry list styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+li {
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+li p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+li span:first-child {
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
+}
+
+li i {
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+li i.fa-circle-minus:hover {
+  color: #c9302c;
+}
+
+li i.fa-star:hover {
+  color: #f0ad4e;
+}
+
+.entry {
+  width: 100%;
+  height: 300px;
+}
+
+.entry::placeholder {
+  padding: 30px;
+  font-size: 1.3em;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/47aae21c46.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1></span> YOUR JOURNAL</h1>
+      
+    </div>
+
+    <div class="row">
+
+      <!-- LOCAL INFORMATION -->
+      <!-- <div class="col-sm-3">
+        <div class="well">
+          <h3><span class="fa fa-user"></span> Local</h3>
+
+          <% if (user.local.email) { %>
+          <p>
+            <strong>id</strong>: <%= user._id %><br>
+            <strong>email</strong>: <%= user.local.email %><br>
+            <strong>password</strong>: <%= user.local.password %>
+          </p>
+
+          <a href="/unlink/local" class="btn btn-default">Unlink</a>
+          <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+          <% } else { %>
+          <a href="/connect/local" class="btn btn-default">Connect Local</a>
+          <% } %>
+
+        </div>
+      </div> -->
+      <div class="col-sm-12">
+        <h3></h3>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/journal">Entries</a></li>
+            <li><a href="/bookmarked">Bookmarks</a></li>
+            <li><a href="/insight">Insights (not linked)</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <div class="row-span-1">
+      <h1 class="title text-center">
+        Create an Entry
+      </h1>
+
+      <form class="text-center" action="/entries" method="post">
+        <input class="date" name="date" type="date" value="">
+        <input class="entry" name="entry" placeholder="Document your thoughts and feelings with ease. 💭">
+        <br>
+        <button class="btn btn-secondary" type="submit">Submit</button>
+      </form>
+
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
